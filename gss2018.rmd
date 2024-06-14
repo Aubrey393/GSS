@@ -51,6 +51,8 @@ barchartGC(~CAPPUN + OWNGUN,data=GSSdata, type="percent")
 
 ```
 
+The graph shows that
+
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 #### Numerical Descriptive Results
@@ -71,6 +73,19 @@ According to the graph, it shows that
 
 ### Inferential Results
 
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+  The P-vaule for the chi-squre test was p=0.0202, so this means we reject the null hypothesis and conclude that ...
+  
+  The P-vaule for for the fisher exact test was p=..... and the odds ration was yyyy..
+  
+  So the odds ratio 2:671:2:
+
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
 #  Question 2
@@ -79,7 +94,14 @@ According to the graph, it shows that
 
 Is there a difference in years of education (EDUC) between the those who did or did not vote in 2012 (VOTE12)?
 
+$H_0$: There is not a difference of education between those who did or did not vote in 2012.
+
+$H_A$: There is a difference of education btween those who did and did not vote in 2012.
+
 ## Methods
+Education is categorical vaible
+Votes is numerical varible
+So we use the Num~Cat helper file.
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
@@ -90,6 +112,13 @@ Is there a difference in years of education (EDUC) between the those who did or 
 ### Descriptive Results
 
 #### Graphical Descriptive Results
+
+
+```{r}
+plot(EDUC~VOTE12,data=GSSdata)
+```
+
+The Graph shows there is a difference in education and to those 
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
