@@ -149,6 +149,11 @@ According to the T-test the p-vaule was 0.0000001248, which is less than .5 so w
 
 Determine if a persons performance on the wordsum test (WORDSUM) is independent of their level of schooling (DEGREE).
 
+
+$H_0$:A persons performance on the wordsum test is not related to their level of schooling.
+
+$H_A$: A persons performance on the wordsum test is related to their level of schooling
+
 ## Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
