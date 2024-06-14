@@ -45,17 +45,27 @@ so i use the Cat~Cat helper file.
 
 #### Graphical Descriptive Results
 
-<!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
-
-#### Numerical Descriptive Results
-
-<!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
-
 ```{r}
 barchartGC(~CAPPUN + OWNGUN,data=GSSdata)
 barchartGC(~CAPPUN + OWNGUN,data=GSSdata, type="percent")
 
 ```
+
+<!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+#### Numerical Descriptive Results
+
+```{r}
+table1 <- xtabs(~CAPPUN + OWNGUN , data=GSSdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The table shows that..
+
+<!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+
 
 According to the graph, it shows that 
 
