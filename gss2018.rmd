@@ -24,6 +24,7 @@ source("GrabData.R")
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->
 
 The data in the dataframe GSSdata is from the 2018 General Social Survey. The first blocks of R-code has selected down a subset of the data to just 16 variables. It has further removed unwanted factor levels in much of the data. Examine the code in the GrabData.R file to see what it is doing. Some of the variables are categorical and others are numerical. Be sure to do a variable analysis before tackling each question.  
+
 First question - Is opinion on the death penalty (CAPPUN) independent of gun ownership (OWNGUN)?
 
 $H_0$: Gun ownership and cappun are unrelated
@@ -51,7 +52,7 @@ barchartGC(~CAPPUN + OWNGUN,data=GSSdata, type="percent")
 
 ```
 
-The graph shows that
+The graph shows that many opposed the idea that CAPPUN death penalty is an independent to gun ownership.
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
@@ -63,7 +64,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-The table shows that..
+The table shows that about 48.28 percent of people who owned a gun were in favor of this idea and 29.03 of those who owned a gun opposed this idea. While another set of people who owned a gun were in favor of this idea but from this other group who owned a gun 24.32 percent of them opposed this idea.
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
@@ -80,11 +81,11 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-  The P-vaule for the chi-squre test was p=0.0202, so this means we reject the null hypothesis and conclude that ...
+  The P-value for the chi-square test was p=0.0202, so this means we reject the null hypothesis and conclude that cappun and and gun ownership are related. 
   
-  The P-vaule for for the fisher exact test was p=..... and the odds ration was yyyy..
+  The P-vaule for for the fisher exact test was p=0.01651and the odds ration was 2:671:1.
   
-  So the odds ratio 2:671:2:
+  So the odds ratio 2:671:1 means that people who don't own a gun are 2.271 times likely to oppose capitial punishment.
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
