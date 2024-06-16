@@ -176,7 +176,7 @@ So we use the Numerical~Cat helper file.
 ```{r}
 plot(WORDSUM~DEGREE,data=GSSdata)
 ```
-According to the bar plot...
+According to the bar plot, it shows that there was a difference on the outcome of someones WORDSUM performance, with their level of education being a factor in the result.
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 #### Numerical Descriptive Results
@@ -185,7 +185,7 @@ According to the bar plot...
 favstats(WORDSUM~DEGREE,data=GSSdata)
 ```
 
-According to the table...
+According to the table there was a slight difference in the means in the peoples performance on the WORDSUM test based on their level of education.
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
@@ -196,7 +196,7 @@ model1 <- aov(WORDSUM~DEGREE,data = GSSdata)
 summary.aov(model1)
 ```
 
-According to the table...
+According to the table the P-value was 0.00000025, which is less than .5 so therefore the null hypothesis.
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
