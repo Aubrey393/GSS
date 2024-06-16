@@ -156,6 +156,12 @@ $H_A$: A persons performance on the wordsum test is related to their level of sc
 
 ## Methods
 
+Performance on the wordsum test is a numerical varible.
+
+Level of schooling is a catergorical varible.
+
+So we use the Numerical~Cat helper file.
+
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
 ##Results
