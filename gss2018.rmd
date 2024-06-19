@@ -67,8 +67,10 @@ table1 <- xtabs(~OWNGUN + CAPPUN , data=GSSdata)
 rowPerc(table1)
 colPerc(table1)
 ```
+Numerical summary shows that 75% of gun owners favor CAPPUN while about 25% oppose CAPPUN.
 
-The table shows that about 48.28 percent of people who owned a gun were in favor of this idea and 29.03 of those who owned a gun opposed this idea. While another set of people who owned a gun were in favor of this idea but from this other group who owned a gun 24.32 percent of them opposed this idea.
+
+The table shows that 
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
@@ -78,13 +80,6 @@ According to the graph, it shows that
 
 ### Inferential Results
 
-
-```{r}
-chisq.test(table1)
-chisqtestGC(table1)
-fisher.test(table1)
-```
-
   The P-value for the chi-square test was p=0.0202, so this means we reject the null hypothesis and conclude that cappun and and gun ownership are related. 
   
   The P-vaule for for the fisher exact test was p=0.01651and the odds ration was 2:671:1.
@@ -92,6 +87,21 @@ fisher.test(table1)
   So the odds ratio 2:671:1 means that people who don't own a gun are 2.271 times likely to oppose capitial punishment.
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
+
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+
+
+ The P-value for the chi-square test was p=0.0202, hence we reject the null hypothesis and conclude that gun owner ship and capital punishment are not independent.
+ 
+ 
+  The P-vaule for for the fisher exact test was p=0.01651 hence we reject the null hypothesis, as with the chi-square test, and furthermore the odds ratio says that gunowns are 2.3 times more likely to favor capital punishment than those who don't own a gun.
+ 
 
 #  Question 2
 
