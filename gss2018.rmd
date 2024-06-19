@@ -219,14 +219,12 @@ summary.aov(model1)
 
 According to the table the P-value was 0.0000002, which is less than .05 so therefore the null hypothesis.
 
-l
-l
-'l;
-l
-l;
-;
-;
-;
+
+```{r}
+#we specify the margins starting at the bottom and proceeding clockwise - thus 8.7 is the left side margin to hold the names of the factors
+par(mar = c(3, 8.7, 2, 2))
+plot(TukeyHSD(model1),las=2)
+```
 
 
 The TukeyHSD test shows there is no difference in highschool and less than highschool.There is a differnce between jr high and high school. There is a difference between bachlors and high school.There is a differnce in graduate and high school. There is no differnce between high school and gratuate. There is no differnce between jr college and graduate, There is no differnce betweem bachlors and graduate. 
