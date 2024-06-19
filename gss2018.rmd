@@ -133,7 +133,7 @@ So we use the Numerical~Cat helper file.
 plot(EDUC~VOTE12,data=GSSdata)
 ```
 
-The Graph shows there is a difference to those who did and didn't vote based on their education levels.
+The Graph shows that those who voted in 2012 tend to have higher education that those who didnt vote.
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
@@ -144,7 +144,7 @@ favstats(EDUC~VOTE12,data=GSSdata)
 ```
 
 
-According to the table there is a slight difference in education of those who did and didn't vote. Those who did vote had a mean of 15.72 which is slightly higer than the mean of 13.4 which are the ones that didn't vote.
+According to the table there is a slight difference in education of those who did and didn't vote. Those who did vote had about 16 years of education which is slightly higer than those with 13 years of education  of 13.4 which are the ones that didn't vote.
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
@@ -217,7 +217,7 @@ model1 <- aov(WORDSUM~DEGREE,data = GSSdata)
 summary.aov(model1)
 ```
 
-According to the table the P-value was 0.00000025, which is less than .5 so therefore the null hypothesis.
+According to the table the P-value was 0.00000025, which is less than .05 so therefore the null hypothesis.
 
 
 
