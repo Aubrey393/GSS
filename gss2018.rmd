@@ -28,6 +28,7 @@ The data in the dataframe GSSdata is from the 2018 General Social Survey. The fi
 First question - Is opinion on the death penalty (CAPPUN) independent of gun ownership (OWNGUN)?
 
 $H_0$: Gun ownership and cappun are unrelated
+
 $H_A$: Gun ownership and cappun are related
 
 ## Methods
